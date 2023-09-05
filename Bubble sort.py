@@ -66,7 +66,7 @@ def countSwaps(a):
     print("Last Element:", a[-1])
 
 if __name__ == '__main__':
-    n = int(input().strip())
-    a = list(map(int, input().rstrip().split()))
+    n = int(input("Enter the number of integers:").strip())
+    a = list(map(int, input("Enter the integers separated by spaces:").rstrip().split()))
 
     countSwaps(a)
