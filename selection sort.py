@@ -1,3 +1,21 @@
+# Given an unsorted array of size N, use selection sort to sort arr[] in increasing order.
+# Example 1:
+#
+# Input:
+# N = 5
+# arr[] = {4, 1, 3, 9, 7}
+# Output:
+# 1 3 4 7 9
+# Explanation:
+# Maintain sorted (in bold) and unsorted subarrays.
+# Select 1. Array becomes 1 4 3 9 7.
+# Select 3. Array becomes 1 3 4 9 7.
+# Select 4. Array becomes 1 3 4 9 7.
+# Select 7. Array becomes 1 3 4 7 9.
+# Select 9. Array becomes 1 3 4 7 9.
+# Complete the functions select() and selectionSort(), where select() takes
+# arr[] and starting point of unsorted array i as input parameters and returns theselected element
+# for each iteration in selection sort, and selectionSort() takes the array and it's size and sorts the array.
 class Solution:
     def select(self, arr, i):
         n = len(arr)
